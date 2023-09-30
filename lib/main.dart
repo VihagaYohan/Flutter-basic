@@ -15,7 +15,20 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           backgroundColor: Colors.blue,
           body: Center(
-              child: Container(height: 300, width: 300, color: Colors.purple))),
+              child: Container(
+                  height: 300,
+                  width: 300,
+                  decoration: BoxDecoration(
+                      color: Colors.deepPurple,
+                      borderRadius: BorderRadius.circular(20)),
+                  padding: const EdgeInsets.all(25),
+                  child: const Text(
+                    "Flutter basic",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold),
+                  )))),
     );
   }
 }
